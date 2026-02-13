@@ -1,10 +1,8 @@
 {
   "framework": "nextjs",
-  "regions": ["sfo1"],
-  "env": {
-    "OPENROUTER_API_KEY": "@openrouter_api_key",
-    "SITE_URL": "https://dashboard.iqfinance.ai"
-  },
+  "regions": [
+    "sfo1"
+  ],
   "headers": [
     {
       "source": "/(.*)",
