@@ -1,0 +1,183 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Company Intelligence Report Schema",
+  "description": "Structured financial KPI and competitive intelligence output for business analysis dashboards",
+  "type": "object",
+  "required": ["company_overview", "financial_kpis", "growth_metrics", "projections", "competitive_landscape", "data_quality"],
+  "properties": {
+    "brandAssets": {
+      "type": "object",
+      "description": "Company branding assets including logo, colors, and brand identity",
+      "properties": {
+        "logoUrl": {
+          "type": "string",
+          "format": "uri",
+          "description": "URL to company logo image"
+        },
+        "primaryColor": {
+          "type": "string",
+          "pattern": "^#[0-9A-Fa-f]{6}$",
+          "description": "Primary brand color in hex format"
+        },
+        "secondaryColors": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^#[0-9A-Fa-f]{6}$"
+          },
+          "description": "Array of secondary brand colors in hex format"
+        },
+        "brandDescription": {
+          "type": "string",
+          "description": "Brand identity and positioning description"
+        },
+        "dataSource": {
+          "type": "string",
+          "default": "brand.dev",
+          "description": "Source of brand data"
+        },
+        "confidence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100,
+          "description": "Brand data confidence score (0-100)"
+        }
+      }
+    },
+    "company_overview": {
+      "type": "object",
+      "required": ["name", "founded", "headquarters", "industry", "business_model", "description", "last_updated"],
+      "properties": {
+        "name": {"type": "string"},
+        "founded": {"type": "string", "pattern": "^[0-9]{4}$"},
+        "headquarters": {"type": "string"},
+        "industry": {"type": "string"},
+        "business_model": {"type": "string"},
+        "description": {"type": "string"},
+        "valuation": {
+          "type": "object",
+          "properties": {
+            "value": {"type": "number"},
+            "currency": {"type": "string", "default": "USD"},
+            "date": {"type": "string", "format": "date"}
+          }
+        },
+        "last_updated": {"type": "string", "format": "date"}
+      }
+    },
+    "financial_kpis": {
+      "type": "object",
+      "properties": {
+        "total_payment_volume": {"$ref": "#/definitions/kpi"},
+        "annual_revenue": {"$ref": "#/definitions/kpi"},
+        "enterprise_adoption_rate": {"$ref": "#/definitions/kpi"},
+        "ai_sector_penetration": {"$ref": "#/definitions/kpi"},
+        "billing_product_arr": {"$ref": "#/definitions/kpi"},
+        "take_rate": {"$ref": "#/definitions/kpi"},
+        "customer_revenue_impact": {"$ref": "#/definitions/kpi"},
+        "time_to_revenue_acceleration": {"$ref": "#/definitions/kpi"},
+        "active_subscriptions": {"$ref": "#/definitions/kpi"},
+        "rd_investment_rate": {"$ref": "#/definitions/kpi"}
+      }
+    },
+    "growth_metrics": {
+      "type": "object",
+      "properties": {
+        "revenue_cagr_3yr": {"type": "number"},
+        "payment_volume_cagr_3yr": {"type": "number"},
+        "customer_growth_rate": {"type": "number"},
+        "market_expansion_rate": {"type": "number"},
+        "profitability_trend": {"type": "string", "enum": ["improving", "stable", "declining"]},
+        "efficiency_trend": {"type": "string"}
+      }
+    },
+    "projections": {
+      "type": "object",
+      "properties": {
+        "revenue_forecast_2025": {"$ref": "#/definitions/projection"},
+        "revenue_forecast_2026": {"$ref": "#/definitions/projection"},
+        "payment_volume_forecast_2025": {"$ref": "#/definitions/projection"},
+        "payment_volume_forecast_2026": {"$ref": "#/definitions/projection"}
+      }
+    },
+    "competitive_landscape": {
+      "type": "object",
+      "properties": {
+        "market_position": {"type": "string"},
+        "market_share_pct": {"type": "number"},
+        "direct_competitors": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "competitive_advantages": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "strategic_risks": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "recent_strategic_moves": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "action": {"type": "string"},
+              "date": {"type": "string"},
+              "value": {"type": "number"},
+              "impact": {"type": "string"}
+            }
+          }
+        }
+      }
+    },
+    "data_quality": {
+      "type": "object",
+      "properties": {
+        "confidence_score": {"type": "number", "minimum": 0, "maximum": 1},
+        "data_sources": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "estimation_methods": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "last_verified": {"type": "string", "format": "date"}
+      }
+    }
+  },
+  "definitions": {
+    "kpi": {
+      "type": "object",
+      "required": ["value", "trend", "source"],
+      "properties": {
+        "value": {"type": ["number", "string"]},
+        "unit": {"type": "string"},
+        "currency": {"type": "string"},
+        "period": {"type": "string"},
+        "yoy_growth": {"type": "number"},
+        "trend": {"type": "string", "enum": ["increasing", "stable", "decreasing"]},
+        "trend_indicator": {"type": "string"},
+        "benchmark": {"type": "string"},
+        "source": {"type": "string"},
+        "confidence": {"type": "number", "minimum": 0, "maximum": 1}
+      }
+    },
+    "projection": {
+      "type": "object",
+      "properties": {
+        "low_estimate": {"type": "number"},
+        "base_estimate": {"type": "number"},
+        "high_estimate": {"type": "number"},
+        "unit": {"type": "string"},
+        "currency": {"type": "string"},
+        "growth_rate_low": {"type": "number"},
+        "growth_rate_base": {"type": "number"},
+        "growth_rate_high": {"type": "number"},
+        "confidence_interval": {"type": "string"},
+        "methodology": {"type": "string"}
+      }
+    }
+  }
+}
