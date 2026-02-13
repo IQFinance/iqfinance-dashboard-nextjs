@@ -2,6 +2,15 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Building2, MapPin, Calendar, DollarSign, Briefcase } from 'lucide-react';
 
+export interface BrandAssets {
+  logoUrl?: string;
+  primaryColor?: string;
+  secondaryColors?: string[];
+  brandDescription?: string;
+  confidence?: number;
+  dataSource?: string;
+}
+
 export interface CompanyOverviewData {
   name: string;
   founded: string;
@@ -15,6 +24,7 @@ export interface CompanyOverviewData {
     date: string;
   };
   last_updated?: string;
+  brandAssets?: BrandAssets;
 }
 
 export interface CompanyHeaderProps {
@@ -22,6 +32,10 @@ export interface CompanyHeaderProps {
 }
 
 export const CompanyHeader: React.FC<CompanyHeaderProps> = ({ data }) => {
+  const brandAssets = data.brandAssets;
+  const primaryColor = brandAssets?.primaryColor || '#3B82F6'; // Default to blue-600
+  const hasLogo = brandAssets?.logoUrl && brandAssets.logoUrl.trim() !== '';
+
   const formatCurrency = (value: number): string => {
     if (value >= 1e9) return `$${(value / 1e9).toFixed(1)}B`;
     if (value >= 1e6) return `$${(value / 1e6).toFixed(1)}M`;
@@ -37,6 +51,14 @@ export const CompanyHeader: React.FC<CompanyHeaderProps> = ({ data }) => {
     });
   };
 
+  // Convert hex to rgba with opacity for subtle backgrounds
+  const hexToRgba = (hex: string, alpha: number): string => {
+    const r = parseInt(hex.slice(1, 3), 16);
+    const g = parseInt(hex.slice(3, 5), 16);
+    const b = parseInt(hex.slice(5, 7), 16);
+    return `rgba(${r}, ${g}, ${b}, ${alpha})`;
+  };
+
   return (
     <motion.div
       initial={{ opacity: 0, y: -20 }}
@@ -47,10 +69,39 @@ export const CompanyHeader: React.FC<CompanyHeaderProps> = ({ data }) => {
       {/* Main Header */}
       <div className="flex items-start justify-between mb-6">
         <div className="flex items-start space-x-4">
-          {/* Company Logo Placeholder */}
-          <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-700 rounded-lg flex items-center justify-center flex-shrink-0">
-            <Building2 className="w-8 h-8 text-white" />
-          </div>
+          {/* Company Logo */}
+          {hasLogo ? (
+            <div 
+              className="w-16 h-16 rounded-lg flex items-center justify-center flex-shrink-0 overflow-hidden border-2"
+              style={{ 
+                borderColor: primaryColor,
+                backgroundColor: hexToRgba(primaryColor, 0.05)
+              }}
+            >
+              <img
+                src={brandAssets.logoUrl}
+                alt={`${data.name} logo`}
+                className="w-full h-full object-contain p-2"
+                onError={(e) => {
+                  // Fallback to icon on image load error
+                  e.currentTarget.style.display = 'none';
+                  const parent = e.currentTarget.parentElement;
+                  if (parent) {
+                    parent.innerHTML = `<svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="${primaryColor}" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>`;
+                  }
+                }}
+              />
+            </div>
+          ) : (
+            <div 
+              className="w-16 h-16 rounded-lg flex items-center justify-center flex-shrink-0"
+              style={{ 
+                background: `linear-gradient(135deg, ${primaryColor} 0%, ${hexToRgba(primaryColor, 0.7)} 100%)`
+              }}
+            >
+              <Building2 className="w-8 h-8 text-white" />
+            </div>
+          )}
           
           {/* Company Name & Industry */}
           <div>
@@ -58,7 +109,13 @@ export const CompanyHeader: React.FC<CompanyHeaderProps> = ({ data }) => {
               {data.name}
             </h1>
             <div className="flex items-center space-x-3">
-              <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-800">
+              <span 
+                className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium"
+                style={{
+                  backgroundColor: hexToRgba(primaryColor, 0.1),
+                  color: primaryColor
+                }}
+              >
                 {data.industry}
               </span>
               <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-gray-100 text-gray-800">
@@ -94,8 +151,13 @@ export const CompanyHeader: React.FC<CompanyHeaderProps> = ({ data }) => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-6 border-t border-gray-100">
         {/* Founded */}
         <div className="flex items-center space-x-3">
-          <div className="p-2 bg-blue-50 rounded-lg">
-            <Calendar className="w-5 h-5 text-blue-600" />
+          <div 
+            className="p-2 rounded-lg"
+            style={{
+              backgroundColor: hexToRgba(primaryColor, 0.1)
+            }}
+          >
+            <Calendar className="w-5 h-5" style={{ color: primaryColor }} />
           </div>
           <div>
             <p className="text-xs text-gray-500">Founded</p>
@@ -105,8 +167,13 @@ export const CompanyHeader: React.FC<CompanyHeaderProps> = ({ data }) => {
 
         {/* Headquarters */}
         <div className="flex items-center space-x-3">
-          <div className="p-2 bg-green-50 rounded-lg">
-            <MapPin className="w-5 h-5 text-green-600" />
+          <div 
+            className="p-2 rounded-lg"
+            style={{
+              backgroundColor: hexToRgba(primaryColor, 0.1)
+            }}
+          >
+            <MapPin className="w-5 h-5" style={{ color: primaryColor }} />
           </div>
           <div>
             <p className="text-xs text-gray-500">Headquarters</p>
@@ -116,8 +183,13 @@ export const CompanyHeader: React.FC<CompanyHeaderProps> = ({ data }) => {
 
         {/* Business Model */}
         <div className="flex items-center space-x-3">
-          <div className="p-2 bg-purple-50 rounded-lg">
-            <Briefcase className="w-5 h-5 text-purple-600" />
+          <div 
+            className="p-2 rounded-lg"
+            style={{
+              backgroundColor: hexToRgba(primaryColor, 0.1)
+            }}
+          >
+            <Briefcase className="w-5 h-5" style={{ color: primaryColor }} />
           </div>
           <div>
             <p className="text-xs text-gray-500">Business Model</p>
