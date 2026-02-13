@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import PDFExportButton from './components/PDFExportButton';
 
 interface AnalysisResult {
   success: boolean;
@@ -101,7 +102,7 @@ export default function Home() {
 
   if (result) {
     return (
-      <div className="min-h-screen bg-[#FAFAFA]">
+      <div id="dashboard-content" className="min-h-screen bg-[#FAFAFA]">
         <div className="container mx-auto px-6 py-12 max-w-5xl">
           {/* Header */}
           <motion.div
@@ -163,12 +164,7 @@ export default function Home() {
             >
               Analyze Another
             </button>
-            <button
-              onClick={() => window.print()}
-              className="px-6 py-3 bg-white border border-gray-300 text-gray-700 font-medium rounded-lg hover:bg-gray-50 transition-colors"
-            >
-              Export Report
-            </button>
+            <PDFExportButton />
           </motion.div>
         </div>
       </div>
