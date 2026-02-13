@@ -1,1 +1,251 @@
-J3VzZSBjbGllbnQnOwoKaW1wb3J0IHsgdXNlU3RhdGUgfSBmcm9tICdyZWFjdCc7CmltcG9ydCB7IG1vdGlvbiB9IGZyb20gJ2ZyYW1lci1tb3Rpb24nOwppbXBvcnQgUERGRXhwb3J0QnV0dG9uIGZyb20gJy4vY29tcG9uZW50cy9QREZFeHBvcnRCdXR0b24nOwoKaW50ZXJmYWNlIEFuYWx5c2lzUmVzdWx0IHsKICBzdWNjZXNzOiBib29sZWFuOwogIGRvbWFpbjogc3RyaW5nOwogIGFuYWx5c2lzOiBzdHJpbmc7CiAgdGltZXN0YW1wOiBzdHJpbmc7CiAgbW9kZWw6IHN0cmluZzsKfQoKZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gSG9tZSgpIHsKICBjb25zdCBbZG9tYWluLCBzZXREb21haW5dID0gdXNlU3RhdGUoJycpOwogIGNvbnN0IFtsb2FkaW5nLCBzZXRMb2FkaW5nXSA9IHVzZVN0YXRlKGZhbHNlKTsKICBjb25zdCBbcmVzdWx0LCBzZXRSZXN1bHRdID0gdXNlU3RhdGU8QW5hbHlzaXNSZXN1bHQgfCBudWxsPihudWxsKTsKICBjb25zdCBbZXJyb3IsIHNldEVycm9yXSA9IHVzZVN0YXRlKCcnKTsKICBjb25zdCBbY3VycmVudFN0ZXAsIHNldEN1cnJlbnRTdGVwXSA9IHVzZVN0YXRlKDApOwoKICBjb25zdCBsb2FkaW5nU3RlcHMgPSBbCiAgICB7IGljb246ICfwn5SNJywgdGV4dDogJ0dhdGhlcmluZyBpbnRlbGxpZ2VuY2UuLi4nIH0sCiAgICB7IGljb246ICfwn6egJywgdGV4dDogJ1Byb2Nlc3NpbmcgZGF0YS4uLicgfSwKICAgIHsgaWNvbjogJ/Cfk4onLCB0ZXh0OiAnQW5hbHl6aW5nIHBhdHRlcm5zLi4uJyB9LAogICAgeyBpY29uOiAn4pyoJywgdGV4dDogJ0ZpbmFsaXppbmcgaW5zaWdodHMuLi4nIH0sCiAgXTsKCiAgY29uc3QgaGFuZGxlQW5hbHl6ZSA9IGFzeW5jIChlOiBSZWFjdC5Gb3JtRXZlbnQpID0+IHsKICAgIGUucHJldmVudERlZmF1bHQoKTsKICAgIAogICAgaWYgKCFkb21haW4udHJpbSgpKSB7CiAgICAgIHNldEVycm9yKCdQbGVhc2UgZW50ZXIgYSBjb21wYW55IGRvbWFpbicpOwogICAgICByZXR1cm47CiAgICB9CgogICAgc2V0TG9hZGluZyh0cnVlKTsKICAgIHNldEVycm9yKCcnKTsKICAgIHNldFJlc3VsdChudWxsKTsKICAgIHNldEN1cnJlbnRTdGVwKDApOwoKICAgIC8vIEFuaW1hdGUgdGhyb3VnaCBsb2FkaW5nIHN0ZXBzCiAgICBjb25zdCBzdGVwSW50ZXJ2YWwgPSBzZXRJbnRlcnZhbCgoKSA9PiB7CiAgICAgIHNldEN1cnJlbnRTdGVwKChwcmV2KSA9PiAocHJldiA8IGxvYWRpbmdTdGVwcy5sZW5ndGggLSAxID8gcHJldiArIDEgOiBwcmV2KSk7CiAgICB9LCAyMDAwKTsKCiAgICB0cnkgewogICAgICBjb25zdCByZXNwb25zZSA9IGF3YWl0IGZldGNoKCcvYXBpL2FuYWx5emUnLCB7CiAgICAgICAgbWV0aG9kOiAnUE9TVCcsCiAgICAgICAgaGVhZGVyczogewogICAgICAgICAgJ0NvbnRlbnQtVHlwZSc6ICdhcHBsaWNhdGlvbi9qc29uJywKICAgICAgICB9LAogICAgICAgIGJvZHk6IEpTT04uc3RyaW5naWZ5KHsgZG9tYWluOiBkb21haW4udHJpbSgpIH0pLAogICAgICB9KTsKCiAgICAgIGNvbnN0IGRhdGEgPSBhd2FpdCByZXNwb25zZS5qc29uKCk7CgogICAgICBpZiAoIXJlc3BvbnNlLm9rKSB7CiAgICAgICAgdGhyb3cgbmV3IEVycm9yKGRhdGEuZXJyb3IgfHwgJ0FuYWx5c2lzIGZhaWxlZCcpOwogICAgICB9CgogICAgICBjbGVhckludGVydmFsKHN0ZXBJbnRlcnZhbCk7CiAgICAgIHNldFJlc3VsdChkYXRhKTsKICAgIH0gY2F0Y2ggKGVycikgewogICAgICBjbGVhckludGVydmFsKHN0ZXBJbnRlcnZhbCk7CiAgICAgIHNldEVycm9yKGVyciBpbnN0YW5jZW9mIEVycm9yID8gZXJyLm1lc3NhZ2UgOiAnRmFpbGVkIHRvIGFuYWx5emUgY29tcGFueScpOwogICAgfSBmaW5hbGx5IHsKICAgICAgc2V0TG9hZGluZyhmYWxzZSk7CiAgICB9CiAgfTsKCiAgY29uc3QgaGFuZGxlUmVzZXQgPSAoKSA9PiB7CiAgICBzZXREb21haW4oJycpOwogICAgc2V0UmVzdWx0KG51bGwpOwogICAgc2V0RXJyb3IoJycpOwogICAgc2V0Q3VycmVudFN0ZXAoMCk7CiAgfTsKCiAgY29uc3QgZm9ybWF0QW5hbHlzaXMgPSAodGV4dDogc3RyaW5nKSA9PiB7CiAgICBjb25zdCBzZWN0aW9ucyA9IHRleHQuc3BsaXQoL1wuKD89XGQrXC58W0EtWlxzXSs6KS8pOwogICAgcmV0dXJuIHNlY3Rpb25zLm1hcCgoc2VjdGlvbiwgaW5kZXgpID0+IHsKICAgICAgY29uc3QgbGluZXMgPSBzZWN0aW9uLnRyaW0oKS5zcGxpdCgnXG4nKTsKICAgICAgY29uc3QgdGl0bGUgPSBsaW5lc1swXTsKICAgICAgY29uc3QgY29udGVudCA9IGxpbmVzLnNsaWNlKDEpLmpvaW4oJ1xuJyk7CiAgICAgIAogICAgICByZXR1cm4gKAogICAgICAgIDxtb3Rpb24uZGl2CiAgICAgICAgICBrZXk9e2luZGV4fQogICAgICAgICAgaW5pdGlhbD17eyBvcGFjaXR5OiAwLCB5OiAxMCB9fQogICAgICAgICAgYW5pbWF0ZT17eyBvcGFjaXR5OiAxLCB5OiAwIH19CiAgICAgICAgICB0cmFuc2l0aW9uPXt7IGRlbGF5OiBpbmRleCAqIDAuMDUsIGR1cmF0aW9uOiAwLjMgfX0KICAgICAgICAgIGNsYXNzTmFtZT0ibWItNCBwLTYgYmctd2hpdGUgcm91bmRlZC1sZyBib3JkZXIgYm9yZGVyLWdyYXktMjAwIGhvdmVyOmJvcmRlci1ncmF5LTMwMCB0cmFuc2l0aW9uLWFsbCIKICAgICAgICA+CiAgICAgICAgICA8aDMgY2xhc3NOYW1lPSJ0ZXh0LWxnIGZvbnQtc2VtaWJvbGQgdGV4dC1ncmF5LTkwMCBtYi0zIj57dGl0bGV9PC9oMz4KICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJ0ZXh0LWdyYXktNjAwIHdoaXRlc3BhY2UtcHJlLXdyYXAgbGVhZGluZy1yZWxheGVkIHRleHQtWzE1cHhdIj4KICAgICAgICAgICAge2NvbnRlbnR9CiAgICAgICAgICA8L2Rpdj4KICAgICAgICA8L21vdGlvbi5kaXY+CiAgICAgICk7CiAgICB9KTsKICB9OwoKICBpZiAocmVzdWx0KSB7CiAgICByZXR1cm4gKAogICAgICA8ZGl2IGlkPSJkYXNoYm9hcmQtY29udGVudCIgY2xhc3NOYW1lPSJtaW4taC1zY3JlZW4gYmctWyNGQUZBRkFdIj4KICAgICAgICA8ZGl2IGNsYXNzTmFtZT0ibWF4LXctN3hsIG14LWF1dG8gcHgtNCBweS0xMiBzbTpweC02IGxnOnB4LTgiPgogICAgICAgICAgey8qIEhlYWRlciAqL30KICAgICAgICAgIDxtb3Rpb24uZGl2CiAgICAgICAgICAgIGluaXRpYWw9e3sgb3BhY2l0eTogMCwgeTogLTIwIH19CiAgICAgICAgICAgIGFuaW1hdGU9e3sgb3BhY2l0eTogMSwgeTogMCB9fQogICAgICAgICAgICB0cmFuc2l0aW9uPXt7IGR1cmF0aW9uOiAwLjUgfX0KICAgICAgICAgICAgY2xhc3NOYW1lPSJmbGV4IGp1c3RpZnktYmV0d2VlbiBpdGVtcy1jZW50ZXIgbWItNiIKICAgICAgICAgID4KICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZsZXggaXRlbXMtY2VudGVyIGdhcC00Ij4KICAgICAgICAgICAgICA8YnV0dG9uCiAgICAgICAgICAgICAgICBvbkNsaWNrPXtoYW5kbGVSZXNldH0KICAgICAgICAgICAgICAgIGNsYXNzTmFtZT0icHgtNiBweS0zIGJnLWdyYXktOTAwIHRleHQtd2hpdGUgcm91bmRlZC1sZyBob3ZlcjpiZy1ncmF5LTgwMCB0cmFuc2l0aW9uLWNvbG9ycyBmb250LW1lZGl1bSBzaGFkb3ctc20iPgogICAgICAgICAgICAgICAgTmV3IEFuYWx5c2lzCiAgICAgICAgICAgICAgPC9idXR0b24+CiAgICAgICAgICAgICAgPFBERkV4cG9ydEJ1dHRvbiAvPgogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgIDwvbW90aW9uLmRpdj4KCiAgICAgICAgICB7LyogUmVzdWx0cyAqL30KICAgICAgICAgIDxtb3Rpb24uZGl2CiAgICAgICAgICAgIGluaXRpYWw9e3sgb3BhY2l0eTogMCB9fQogICAgICAgICAgICBhbmltYXRlPXt7IG9wYWNpdHk6IDEgfX0KICAgICAgICAgICAgdHJhbnNpdGlvbj17eyBkdXJhdGlvbjogMC41IH19CiAgICAgICAgICAgIGNsYXNzTmFtZT0ic3BhY2UteS02IgogICAgICAgICAgPgogICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iYmctd2hpdGUgcm91bmRlZC14bCBzaGFkb3ctc20gcC04IGJvcmRlciBib3JkZXItZ3JheS0yMDAiPgogICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWJldHdlZW4gbWItNiBwYi00IGJvcmRlci1iIGJvcmRlci1ncmF5LTIwMCI+CiAgICAgICAgICAgICAgICA8ZGl2PgogICAgICAgICAgICAgICAgICA8aDIgY2xhc3NOYW1lPSJ0ZXh0LTN4bCBmb250LWJvbGQgdGV4dC1ncmF5LTkwMCI+e3Jlc3VsdC5kb21haW59PC9oMj4KICAgICAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPSJ0ZXh0LXNtIHRleHQtZ3JheS01MDAgbXQtMSI+CiAgICAgICAgICAgICAgICAgICAgQW5hbHl6ZWQge25ldyBEYXRlKHJlc3VsdC50aW1lc3RhbXApLnRvTG9jYWxlRGF0ZVN0cmluZygnZW4tVVMnLCB7IAogICAgICAgICAgICAgICAgICAgICAgbW9udGg6ICdsb25nJywgCiAgICAgICAgICAgICAgICAgICAgICBkYXk6ICdudW1lcmljJywgCiAgICAgICAgICAgICAgICAgICAgICB5ZWFyOiAnbnVtZXJpYycsCiAgICAgICAgICAgICAgICAgICAgICBob3VyOiAnbnVtZXJpYycsIAogICAgICAgICAgICAgICAgICAgICAgbWludXRlOiAnbnVtZXJpYycKICAgICAgICAgICAgICAgICAgICB9KX0KICAgICAgICAgICAgICAgICAgPC9wPgogICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0idGV4dC1zbSB0ZXh0LWdyYXktNTAwIj4KICAgICAgICAgICAgICAgICAgTW9kZWw6IHtyZXN1bHQubW9kZWx9CiAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0ibXQtNiI+CiAgICAgICAgICAgICAgICB7Zm9ybWF0QW5hbHlzaXMocmVzdWx0LmFuYWx5c2lzKX0KICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICA8L21vdGlvbi5kaXY+CiAgICAgICAgPC9kaXY+CiAgICAgIDwvZGl2PgogICAgKTsKICB9CgogIGRvY3VtZW50LmJvZHkuY2xhc3NMaXN0LmFkZCgnb3ZlcmZsb3ctaGlkZGVuJyk7CiAgcmV0dXJuCiAgKAogICAgPGRpdiBjbGFzc05hbWU9Im1pbi1oLXNjcmVlbiBmbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWNlbnRlciBiZy1bI0ZBRkFGQV0gcHgtNCI+CiAgICAgIDxtb3Rpb24uZGl2CiAgICAgICAgaW5pdGlhbD17eyBvcGFjaXR5OiAwLCB5OiAyMCB9fQogICAgICAgIGFuaW1hdGU9e3sgb3BhY2l0eTogMSwgeTogMCB9fQogICAgICAgIHRyYW5zaXRpb249e3sgZHVyYXRpb246IDAuNiB9fQogICAgICAgIGNsYXNzTmFtZT0idy1mdWxsIG1heC13LTJ4bCIKICAgICAgPgogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJtYi04IHRleHQtY2VudGVyIj4KICAgICAgICAgIDxtb3Rpb24uaDEKICAgICAgICAgICAgaW5pdGlhbD17eyBvcGFjaXR5OiAwLCB5OiAtMjAgfX0KICAgICAgICAgICAgYW5pbWF0ZT17eyBvcGFjaXR5OiAxLCB5OiAwIH19CiAgICAgICAgICAgIHRyYW5zaXRpb249e3sgZGVsYXk6IDAuMiwgZHVyYXRpb246IDAuNiB9fQogICAgICAgICAgICBjbGFzc05hbWU9InRleHQtNXhsIGZvbnQtYm9sZCB0ZXh0LWdyYXktOTAwIG1iLTQiCiAgICAgICAgICA+CiAgICAgICAgICAgIElRRmluYW5jZQogICAgICAgICAgPC9tb3Rpb24uaDE+CiAgICAgICAgICA8bW90aW9uLnAKICAgICAgICAgICAgaW5pdGlhbD17eyBvcGFjaXR5OiAwIH19CiAgICAgICAgICAgIGFuaW1hdGU9e3sgb3BhY2l0eTogMSB9fQogICAgICAgICAgICB0cmFuc2l0aW9uPXt7IGRlbGF5OiAwLjQsIGR1cmF0aW9uOiAwLjYgfX0KICAgICAgICAgICAgY2xhc3NOYW1lPSJ0ZXh0LXhsIHRleHQtZ3JheS02MDAgbWF4LXctM3hsIG14LWF1dG8gbGVhZGluZy1yZWxheGVkIgogICAgICAgICAgPgogICAgICAgICAgICBJbnRlbGxpZ2VudCBjb21wYW55IGZpbmFuY2lhbCBhbmFseXNpcyBwb3dlcmVkIGJ5IGFkdmFuY2VkIEFJCiAgICAgICAgICA8L21vdGlvbi5wPgogICAgICAgIDwvZGl2PgoKICAgICAgICB7bG9hZGluZyA/ICgKICAgICAgICAgIDxtb3Rpb24uZGl2CiAgICAgICAgICAgIGluaXRpYWw9e3sgb3BhY2l0eTogMCwgc2NhbGU6IDAuOSB9fQogICAgICAgICAgICBhbmltYXRlPXt7IG9wYWNpdHk6IDEsIHNjYWxlOiAxIH19CiAgICAgICAgICAgIGNsYXNzTmFtZT0iYmctd2hpdGUgcm91bmRlZC0yeGwgc2hhZG93LXhsIHAtMTIgYm9yZGVyIGJvcmRlci1ncmF5LTIwMCIKICAgICAgICAgID4KICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9InRleHQtY2VudGVyIj4KICAgICAgICAgICAgICA8bW90aW9uLmRpdgogICAgICAgICAgICAgICAgYW5pbWF0ZT17eyByb3RhdGU6IDM2MCB9fQogICAgICAgICAgICAgICAgdHJhbnNpdGlvbj17eyBkdXJhdGlvbjogMiwgcmVwZWF0OiBJbmZpbml0eSwgZWFzZTogImxpbmVhciIgfX0KICAgICAgICAgICAgICAgIGNsYXNzTmFtZT0idGV4dC02eGwgbWItNiI+CiAgICAgICAgICAgICAgICAge2xvYWRpbmdTdGVwc1tjdXJyZW50U3RlcF0uaWNvbn0KICAgICAgICAgICAgICA8L21vdGlvbi5kaXY+CiAgICAgICAgICAgICAgPG1vdGlvbi5wCiAgICAgICAgICAgICAgICBrZXk9e2N1cnJlbnRTdGVwfQogICAgICAgICAgICAgICAgaW5pdGlhbD17eyBvcGFjaXR5OiAwLCB5OiAxMCB9fQogICAgICAgICAgICAgICAgYW5pbWF0ZT17eyBvcGFjaXR5OiAxLCB5OiAwIH19CiAgICAgICAgICAgICAgICBleGl0PXt7IG9wYWNpdHk6IDAsIHk6IC0xMCB9fQogICAgICAgICAgICAgICAgY2xhc3NOYW1lPSJ0ZXh0LWxnIHRleHQtZ3JheS03MDAgZm9udC1tZWRpdW0iPgogICAgICAgICAgICAgICAge2xvYWRpbmdTdGVwc1tjdXJyZW50U3RlcF0udGV4dH0KICAgICAgICAgICAgICA8L21vdGlvbi5wPgogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgIDwvbW90aW9uLmRpdj4KICAgICAgICApIDogKAogICAgICAgICAgPG1vdGlvbi5mb3JtCiAgICAgICAgICAgIG9uU3VibWl0PXtoYW5kbGVBbmFseXplfQogICAgICAgICAgICBpbml0aWFsPXt7IG9wYWNpdHk6IDAsIHNjYWxlOiAwLjkgfX0KICAgICAgICAgICAgYW5pbWF0ZT17eyBvcGFjaXR5OiAxLCBzY2FsZTogMSB9fQogICAgICAgICAgICB0cmFuc2l0aW9uPXt7IGRlbGF5OiAwLjYsIGR1cmF0aW9uOiAwLjYgfX0KICAgICAgICAgICAgY2xhc3NOYW1lPSJiZy13aGl0ZSByb3VuZGVkLTJ4bCBzaGFkb3cteGwgcC0xMiBib3JkZXIgYm9yZGVyLWdyYXktMjAwIgogICAgICAgICAgPgogICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0ic3BhY2UteS02Ij4KICAgICAgICAgICAgICA8bGFiZWwgY2xhc3NOYW1lPSJibG9jayB0ZXh0LXNtIGZvbnQtbWVkaXVtIHRleHQtZ3JheS03MDAgbWItMiI+CiAgICAgICAgICAgICAgICBDb21wYW55IERvbWFpbgogICAgICAgICAgICAgIDwvbGFiZWw+CiAgICAgICAgICAgICAgPGlucHV0CiAgICAgICAgICAgICAgICB0eXBlPSJ0ZXh0IgogICAgICAgICAgICAgICAgdmFsdWU9e2RvbWFpbn0KICAgICAgICAgICAgICAgIG9uQ2hhbmdlPXsoZSkgPT4gc2V0RG9tYWluKGUudGFyZ2V0LnZhbHVlKX0KICAgICAgICAgICAgICAgIHBsYWNlaG9sZGVyPSJleGFtcGxlLmNvbSIKICAgICAgICAgICAgICAgIGNsYXNzTmFtZT0idy1mdWxsIHB4LTQgcHktMyBib3JkZXIgYm9yZGVyLWdyYXktMzAwIHJvdW5kZWQtbGcgZm9jdXM6b3V0bGluZS1ub25lIGZvY3VzOnJpbmctMiBmb2N1czpyaW5nLWdyYXktOTAwIGZvY3VzOmJvcmRlci10cmFuc3BhcmVudCB0cmFuc2l0aW9uLWFsbCBiZy13aGl0ZSIKICAgICAgICAgICAgICAgIGRpc2FibGVkPXtsb2FkaW5nfQogICAgICAgICAgICAgIC8+CiAgICAgICAgICAgIDwvZGl2PgoKICAgICAgICAgICAgPGJ1dHRvbgogICAgICAgICAgICAgIHR5cGU9InN1Ym1pdCIKICAgICAgICAgICAgICBkaXNhYmxlZD17bG9hZGluZyB8fCAhZG9tYWluLnRyaW0oKX0KICAgICAgICAgICAgICBjbGFzc05hbWU9InctZnVsbCBweS0zIGJnLWdyYXktOTAwIHRleHQtd2hpdGUgcm91bmRlZC1sZyBob3ZlcjpiZy1ncmF5LTgwMCBkaXNhYmxlZDpiZy1ncmF5LTMwMCBkaXNhYmxlZDpjdXJzb3Itbm90LWFsbG93ZWQgdHJhbnNpdGlvbi1hbGwgZm9udC1tZWRpdW0gc2hhZG93LXNtIj4KICAgICAgICAgICAgICBBbmFseXplCiAgICAgICAgICAgIDwvYnV0dG9uPgogICAgICAgICAgPC9tb3Rpb24uZm9ybT4KICAgICAgICApfQoKICAgICAgICB7ZXJyb3IgJiYgKAogICAgICAgICAgPG1vdGlvbi5kaXYKICAgICAgICAgICAgaW5pdGlhbD17eyBvcGFjaXR5OiAwLCB5OiAxMCB9fQogICAgICAgICAgICBhbmltYXRlPXt7IG9wYWNpdHk6IDEsIHk6IDAgfX0KICAgICAgICAgICAgY2xhc3NOYW1lPSJtdC02IHAtNCBiZy1yZWQtNTAgYm9yZGVyLWwtNCBib3JkZXItcmVkLTUwMCB0ZXh0LXJlZC03MDAgcm91bmRlZCBzaGFkb3ctc20iPgogICAgICAgICAgICB7ZXJyb3J9CiAgICAgICAgICA8L21vdGlvbi5kaXY+CiAgICAgICAgKX0KICAgICAgPC9tb3Rpb24uZGl2PgogICAgPC9kaXY+CiAgKTsKfQo=
+'use client';
+
+import { useState } from 'react';
+import { motion } from 'framer-motion';
+import PDFExportButton from './components/PDFExportButton';
+
+interface AnalysisResult {
+  success: boolean;
+  domain: string;
+  analysis: string;
+  timestamp: string;
+  model: string;
+}
+
+export default function Home() {
+  const [domain, setDomain] = useState('');
+  const [loading, setLoading] = useState(false);
+  const [result, setResult] = useState<AnalysisResult | null>(null);
+  const [error, setError] = useState('');
+  const [currentStep, setCurrentStep] = useState(0);
+
+  const loadingSteps = [
+    { icon: '🔍', text: 'Gathering intelligence...' },
+    { icon: '🧠', text: 'Processing data...' },
+    { icon: '📊', text: 'Analyzing patterns...' },
+    { icon: '✨', text: 'Finalizing insights...' },
+  ];
+
+  const handleAnalyze = async (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    if (!domain.trim()) {
+      setError('Please enter a company domain');
+      return;
+    }
+
+    setLoading(true);
+    setError('');
+    setResult(null);
+    setCurrentStep(0);
+
+    // Animate through loading steps
+    const stepInterval = setInterval(() => {
+      setCurrentStep((prev) => (prev < loadingSteps.length - 1 ? prev + 1 : prev));
+    }, 2000);
+
+    try {
+      const response = await fetch('/api/analyze', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ domain: domain.trim() }),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Analysis failed');
+      }
+
+      clearInterval(stepInterval);
+      setResult(data);
+    } catch (err) {
+      clearInterval(stepInterval);
+      setError(err instanceof Error ? err.message : 'Failed to analyze company');
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const handleReset = () => {
+    setDomain('');
+    setResult(null);
+    setError('');
+    setCurrentStep(0);
+  };
+
+  const formatAnalysis = (text: string) => {
+    const sections = text.split(/\.(?=\d+\.|[A-Z\s]+:)/);
+    return sections.map((section, index) => {
+      const lines = section.trim().split('\n');
+      const title = lines[0];
+      const content = lines.slice(1).join('\n');
+      
+      return (
+        <motion.div
+          key={index}
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: index * 0.05, duration: 0.3 }}
+          className="mb-4 p-6 bg-white rounded-lg border border-gray-200 hover:border-gray-300 transition-all"
+        >
+          <h3 className="text-lg font-semibold text-gray-900 mb-3">{title}</h3>
+          <div className="text-gray-600 whitespace-pre-wrap leading-relaxed text-[15px]">
+            {content}
+          </div>
+        </motion.div>
+      );
+    });
+  };
+
+  if (result) {
+    return (
+      <div id="dashboard-content" className="min-h-screen bg-[#FAFAFA]">
+        <div className="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
+          {/* Header */}
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="flex justify-between items-center mb-6"
+          >
+            <div className="flex items-center gap-4">
+              <button
+                onClick={handleReset}
+                className="px-6 py-3 bg-gray-900 text-white rounded-lg hover:bg-gray-800 transition-colors font-medium shadow-sm">
+                New Analysis
+              </button>
+              <PDFExportButton />
+            </div>
+          </motion.div>
+
+          {/* Results */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5 }}
+            className="space-y-6"
+          >
+            <div className="bg-white rounded-xl shadow-sm p-8 border border-gray-200">
+              <div className="flex items-center justify-between mb-6 pb-4 border-b border-gray-200">
+                <div>
+                  <h2 className="text-3xl font-bold text-gray-900">{result.domain}</h2>
+                  <p className="text-sm text-gray-500 mt-1">
+                    Analyzed {new Date(result.timestamp).toLocaleDateString('en-US', { 
+                      month: 'long', 
+                      day: 'numeric', 
+                      year: 'numeric',
+                      hour: 'numeric', 
+                      minute: 'numeric'
+                    })}
+                  </p>
+                </div>
+                <div className="text-sm text-gray-500">
+                  Model: {result.model}
+                </div>
+              </div>
+              <div className="mt-6">
+                {formatAnalysis(result.analysis)}
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="min-h-screen flex items-center justify-center bg-[#FAFAFA] px-4">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        className="w-full max-w-2gl"
+      >
+        <div className="mb-8 text-center">
+          <motion.h1
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2, duration: 0.6 }}
+            className="text-5xl font-bold text-gray-900 mb-4"
+          >
+            IQFinance
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.4, duration: 0.6 }}
+            className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed"
+          >
+            Intelligent company financial analysis powered by advanced AI
+          </motion.p>
+        </div>
+
+        {loading ? (
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            className="bg-white rounded-2xl shadow-xl p-12 border border-gray-200"
+          >
+            <div className="text-center">
+              <motion.div
+                animate={{ rotate: 360 }}
+                transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
+                className="text-6xl mb-6">
+                 {loadingSteps[currentStep].icon}
+              </motion.div>
+              <motion.p
+                key={currentStep}
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -10 }}
+                className="text-lg text-gray-700 font-medium">
+                {loadingSteps[currentStep].text}
+              </motion.p>
+            </div>
+          </motion.div>
+        ) : (
+          <motion.form
+            onSubmit={handleAnalyze}
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 0.6, duration: 0.6 }}
+            className="bg-white rounded-2xl shadow-xl p-12 border border-gray-200"
+          >
+            <div className="space-y-6">
+              <label className="block text-sm font-medium text-gray-700 mb-2">
+                Company Domain
+              </label>
+              <input
+                type="text"
+                value={domain}
+                onChange={(e) => setDomain(e.target.value)}
+                placeholder="example.com"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-900 focus:border-transparent transition-all bg-white"
+                disabled={loading}
+              />
+            </div>
+
+            <button
+              type="submit"
+              disabled={loading || !domain.trim()}
+              className="w-full py-3 bg-gray-900 text-white rounded-lg hover:bg-gray-800 disabled:bg-gray-300 disabled:cursor-not-allowed transition-all font-medium shadow-sm">
+              Analyze
+            </button>
+          </motion.form>
+        )}
+
+        {error && (
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="mt-6 p-4 bg-red-50 border-l-4 border-red-500 text-red-700 rounded shadow-sm">
+            {error}
+          </motion.div>
+        )}
+      </motion.div>
+    </div>
+  );
+}
